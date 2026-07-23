@@ -1,6 +1,6 @@
-  FROM tomcat:9.0
+FROM tomcat:9.0-jdk21
 
-COPY target/*.war /usr/local/tomcat/webapps/banking-app.war
+COPY target/banking-app.war /usr/local/tomcat/webapps/banking-app.war
 
 EXPOSE 8080
 
